@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.blacio.squarespuzzle.GameActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:weightSum="2">
+
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="SQUARES\nPUZZLE"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="@dimen/menubutsize"
+                android:fontFamily="serif" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:text="NEW\nGAME"
+                android:background="@drawable/menu_button"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="@dimen/menubutsize"
+                android:fontFamily="casual"
+                android:onClick="newGame"
+                android:id="@+id/butNew" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="2">
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:text="HOW\nTO PLAY"
+        android:background="@drawable/menu_button"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="@dimen/menubutsize"
+        android:fontFamily="casual"
+        android:onClick="newInstr"
+        android:id="@+id/butInstr" />
+
+
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:layout_margin="7dp"
+            android:text="SCORES"
+            android:background="@drawable/menu_button"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="@dimen/menubutsize"
+            android:fontFamily="casual"
+            android:onClick="newScore"
+            android:id="@+id/butScore" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

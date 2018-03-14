@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.blacio.squarespuzzle.GameActivity"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:text="Score\n100"
+            android:textColor="@color/color_grey"
+            android:layout_gravity="center"
+            android:textSize="@dimen/gmtxtsize"
+            android:padding="4dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            android:text="Time:\n00:00"
+            android:textColor="@color/color_grey"
+            android:layout_gravity="center"
+            android:textSize="@dimen/gmtxtsize"
+            android:padding="4dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+    <Button
+        android:id="@+id/mainbutton"
+
+        android:text="RESET"
+        android:gravity="left|center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/gmbutsize"
+        android:paddingLeft="30dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/menu_button"
+        android:fontFamily="serif" />
+
+        <Button
+            android:id="@+id/main2button"
+
+            android:text="NEXT"
+            android:gravity="left|center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/gmbutsize"
+            android:paddingLeft="30dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_button"
+            android:fontFamily="serif" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:weightSum="10"
+        android:padding="7dp"
+        android:id="@+id/tabel">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_unvisited" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+
+
+

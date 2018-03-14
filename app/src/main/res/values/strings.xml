@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Squares Puzzle</string>
+    <string name="title">HOW TO PLAY ?!</string>
+    <string name="instr1">The aim of this game is to complete as many squares as possible. To do that, you have to click on the available squares. When you click on them another 4 squares appears (up, right,down,left).</string>
+    <string name="instr2">If a squares is already available and another squares must appear in that place, you will lose, unless the clicked square is PROTECTED on that side. A square is protected on one side if it is colored in black at that side. This means you don\'t have to worry if there is already a square available near the protected side of the clicked square, you are safe on that side !</string>
+    <string name="instr3">You can play different sizes of puzzles. The score for each size is calculated in this way:\n\n  -each cell available is 1 point\n  -each time you reset a game you lose 5, 7 or 10 points (depending on what type of game you play)\n  -each time you change the game of the same type after you have already begun it, you lose 6, 16 or 33 points\n</string>
+    <string name="instr4">  -if you have more that 21, 43 or 90 squares available (depending on what type of game you play), you get 25, 49 or 100 bonus points\n  -when you change a game the positive score of that game is divided with the number of minutes that have passed\n  -if you click a wrong square you lose 25, 49 or 100 points</string>
+    <string name="title_activity_bonus_points">BonusPoints</string>
+    <string name="dialog_menu">This game provides you some bonuses in case you have a bad session ! If you want to benefit from these bonuses you have to CONNECT TO INTERNET now\n</string>
+
+    <string name="nopoints">You have not earned any points !!!</string>
+    <string name="save150">You have lost some points in this round !\nEarn 150 points by watching a RewardedVideo !!!\n</string>
+    <string name="well150">WELL DONE !!!\n\nYou have earned\n 150 points !!!\n</string>
+    <string name="save100">You have lost some points in this round !\nEarn 100 points by watching a RewardedVideo !!!\n</string>
+    <string name="well100">WELL DONE !!!\n\nYou have earned\n 100 points !!!\n</string>
+    <string name="save75">You have lost some points in this round !\nEarn 75 points by watching a RewardedVideo !!!\n</string>
+    <string name="well75">WELL DONE !!!\n\nYou have earned\n 75 points !!!\n</string>
+    <string name="ask_name">Please enter your name/nickname</string>
+    <string name="ask_country">Where are you from ?</string>
+    <string name="toast_space">You have to complete the blank space</string>
+</resources>

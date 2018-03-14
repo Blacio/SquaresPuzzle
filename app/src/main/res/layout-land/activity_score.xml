@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_score"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.blacio.squarespuzzle.ScoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:onClick="FIVEGame">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textColor="@color/color_grey"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="EASY"
+                android:textSize="@dimen/lev"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/scoreFIVE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_grey"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:text="Score: 0"
+                android:textSize="@dimen/scr"/>
+
+            <TextView
+                android:id="@+id/gamesFIVE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_grey"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:text="Games Played: 0"
+                android:textSize="@dimen/gmply"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:paddingRight="35dp"
+            android:text="5x5"
+            android:textSize="@dimen/lvnb"
+             />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:onClick="SEVENGame">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:padding="3dp"
+            android:text="MEDIUM"
+            android:textSize="@dimen/lev"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/scoreSEVEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_grey"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:text="Score: 0"
+                android:textSize="@dimen/scr"/>
+
+            <TextView
+                android:id="@+id/gamesSEVEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_grey"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:text="Games Played: 0"
+                android:textSize="@dimen/gmply"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_grey"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingRight="35dp"
+            android:text="7x7"
+            android:textSize="@dimen/lvnb"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:onClick="TENGame">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_grey"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="HARD"
+            android:textSize="@dimen/lev"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/scoreTEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_grey"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:text="Score: 0"
+                android:textSize="@dimen/scr"/>
+
+            <TextView
+                android:id="@+id/gamesTEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_grey"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:text="Games Played: 0"
+                android:textSize="@dimen/gmply"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_grey"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingRight="35dp"
+            android:text="10x10"
+            android:textSize="@dimen/lvnb"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

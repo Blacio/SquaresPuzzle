@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="activity_vertical_margin">20dp</dimen>
+    <dimen name="lev">50sp</dimen>
+    <dimen name="scr">40sp</dimen>
+    <dimen name="gmply">40sp</dimen>
+    <dimen name="lvnb">70sp</dimen>
+
+    <dimen name="instit">55sp</dimen>
+    <dimen name="insdim">33sp</dimen>
+
+    <dimen name="gmtxtsize">60sp</dimen>
+    <dimen name="gmbutsize">40sp</dimen>
+
+    <dimen name="menubutsize">45sp</dimen>
+    <dimen name="worldtitle">65sp</dimen>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "557783834938",
+    "firebase_url": "https://squares-puzzle.firebaseio.com",
+    "project_id": "squares-puzzle",
+    "storage_bucket": "squares-puzzle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557783834938:android:6b9648f0acd69edc",
+        "android_client_info": {
+          "package_name": "com.blacio.squarespuzzle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557783834938-fqiqqcd3auk5j84gj7c8nvct31621es1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-OhN-F0WT1-nUdfxairJItblCNAUDBQs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

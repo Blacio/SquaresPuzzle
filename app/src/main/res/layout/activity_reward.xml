@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reward"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.blacio.squarespuzzle.RewardActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ptsaved"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:text="WELL DONE!!!\n\nYou have saved\n100 points\n"
+        android:background="@drawable/border"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif" />
+
+
+</RelativeLayout>
